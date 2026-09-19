@@ -26,39 +26,71 @@
     <!-- Header / Navbar -->
     <header class="border-b border-rrBorder bg-black/80 sticky top-0 z-50 backdrop-blur-md">
         <div class="max-w-4xl mx-auto px-4 py-3 flex justify-between items-center">
-            <div class="flex items-center space-x-2">
-                <img src="https://i.ibb.co/689L51P/58834.png" alt="RR Logo" class="w-8 h-8 object-contain rounded">
-                <span class="font-bold tracking-widest text-sm uppercase">Rift Raiders</span>
+            <div class="flex items-center space-x-3">
+                <img src="https://i.ibb.co/689L51P/58834.png" alt="RR Logo" class="w-9 h-9 object-contain rounded-full border border-rrRed/40 p-0.5">
+                <div>
+                    <span class="font-bold tracking-widest text-sm uppercase block leading-none">Rift Raiders</span>
+                    <span class="text-[9px] text-rrRed font-semibold tracking-wider uppercase">EST. 2024</span>
+                </div>
             </div>
             <div class="flex items-center space-x-4 text-sm font-semibold">
-                <a href="https://discord.gg/x3M8dZ7fmR" target="_blank" class="hover:text-rrRed transition flex items-center"><i class="fab fa-discord mr-1 text-base"></i> Discord</a>
-                <a href="mailto:riftraiders.wr@gmail.com" class="hover:text-rrRed transition flex items-center"><i class="fas fa-envelope mr-1 text-base"></i> Email</a>
+                <a href="https://discord.gg/x3M8dZ7fmR" target="_blank" class="hover:text-rrRed transition flex items-center"><i class="fab fa-discord mr-1 text-base text-rrRed"></i> Discord</a>
+                <a href="https://www.facebook.com/share/19rMmgaJKg/" target="_blank" class="hover:text-rrRed transition flex items-center"><i class="fab fa-facebook mr-1 text-base text-rrRed"></i> Facebook</a>
+                <a href="mailto:riftraiders.wr@gmail.com" class="hover:text-rrRed transition flex items-center"><i class="fas fa-envelope mr-1 text-base text-rrRed"></i> Email</a>
             </div>
         </div>
     </header>
 
     <!-- Main Content -->
-    <main class="max-w-4xl mx-auto px-4 py-6 space-y-12 flex-grow w-full">
+    <main class="max-w-4xl mx-auto px-4 py-6 space-y-10 flex-grow w-full">
         
-        <!-- Cover Photo Banner Section -->
-        <section class="relative rounded-xl overflow-hidden border border-rrBorder shadow-2xl h-48 md:h-72 bg-black">
-            <img src="https://i.ibb.co/3k15y8B/58833.png" alt="Rift Raiders Cover" class="w-full h-full object-cover opacity-90">
-            <div class="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent flex flex-col justify-end p-6 text-center">
-                <h1 class="text-2xl md:text-4xl font-black tracking-wider uppercase text-white drop-shadow-md">Rift Raiders</h1>
-                <p class="text-gray-300 text-xs md:text-sm mt-1">Official Gaming Guild & Community Hub</p>
+        <!-- Cover Photo Banner / Hero Section -->
+        <section class="relative rounded-2xl overflow-hidden border border-rrBorder shadow-2xl bg-black">
+            <!-- Background Image -->
+            <div class="relative h-64 md:h-80 w-full overflow-hidden">
+                <img src="https://i.ibb.co/3k15y8B/58833.png" alt="Rift Raiders Cover" class="w-full h-full object-cover opacity-75">
+                <div class="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent"></div>
+            </div>
+
+            <!-- Banner Content Overlay -->
+            <div class="absolute inset-0 flex flex-col justify-end p-6 md:p-8 space-y-2">
+                <div class="flex items-center space-x-2">
+                    <span class="bg-rrRed text-white text-[10px] font-black px-2.5 py-0.5 rounded uppercase tracking-widest">Official Guild</span>
+                    <span class="text-gray-300 text-[11px] font-semibold tracking-wider">RIFT RAIDERS • EST. 2024</span>
+                </div>
+                <div>
+                    <h1 class="text-3xl md:text-5xl font-black tracking-wider uppercase text-white drop-shadow-md">Rift Raiders</h1>
+                    <p class="text-rrRed font-bold text-xs md:text-sm tracking-wide mt-0.5">Competitive gaming. Built to dominate the Rift.</p>
+                </div>
+                <p class="text-gray-300 text-xs md:text-sm max-w-2xl leading-relaxed hidden sm:block pt-1">
+                    Rift Raiders began its journey in 2024 as a dedicated competitive team. After a year of climbing the ranks, we expanded in April 2025 by establishing our official guild. Today, we continue to field elite rosters and content creators.
+                </p>
+                <div class="pt-2">
+                    <a href="#roster" class="inline-flex items-center bg-rrRed hover:bg-red-700 text-white font-bold px-4 py-2 rounded-lg text-xs uppercase tracking-wider transition shadow-lg">
+                        Explore The Roster <i class="fas fa-arrow-down ml-2"></i>
+                    </a>
+                </div>
             </div>
         </section>
 
+        <!-- About Description Mobile View -->
+        <section class="sm:hidden bg-rrCard p-4 rounded-xl border border-rrBorder space-y-2">
+            <h3 class="text-xs font-bold text-rrRed uppercase tracking-wider">About Rift Raiders</h3>
+            <p class="text-gray-300 text-xs leading-relaxed">
+                Rift Raiders began its journey in 2024 as a dedicated competitive team. After a year of climbing the ranks, we expanded in April 2025 by establishing our official guild. Today, we continue to field elite rosters.
+            </p>
+        </section>
+
         <!-- MEET THE TEAMS (PLAYERS) -->
-        <section class="space-y-6">
+        <section id="roster" class="space-y-6">
             <div class="border-l-4 border-rrRed pl-3">
-                <span class="text-rrRed text-xs font-bold tracking-widest uppercase">Roster</span>
+                <span class="text-rrRed text-xs font-bold tracking-widest uppercase">Competitive Roster</span>
                 <h2 class="text-2xl font-bold uppercase tracking-wide">Meet The Teams</h2>
-                <p class="text-gray-400 text-xs">Active competitive players across League of Legends and Wild Rift.</p>
+                <p class="text-gray-400 text-xs">Active competitive players across Wild Rift, League of Legends, and Valorant.</p>
             </div>
 
-            <!-- Players Grid -->
-            <div id="playersGrid" class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <!-- Players Grid (Side-by-side Card Layout) -->
+            <div id="playersGrid" class="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <!-- Injected via JavaScript -->
             </div>
         </section>
@@ -72,7 +104,7 @@
             </div>
 
             <!-- Creators Grid -->
-            <div id="creatorsGrid" class="grid grid-cols-1 gap-6">
+            <div id="creatorsGrid" class="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <!-- Injected via JavaScript -->
             </div>
         </section>
@@ -86,6 +118,7 @@
                 <p>© 2026 Rift Raiders. All rights reserved.</p>
                 <div class="flex space-x-4 mt-2">
                     <a href="https://discord.gg/x3M8dZ7fmR" target="_blank" class="hover:text-rrRed">Discord</a>
+                    <a href="https://www.facebook.com/share/19rMmgaJKg/" target="_blank" class="hover:text-rrRed">Facebook</a>
                     <a href="mailto:riftraiders.wr@gmail.com" class="hover:text-rrRed">Email</a>
                 </div>
             </div>
@@ -97,6 +130,256 @@
         </div>
     </footer>
 
+    <!-- Secure Admin Modal Dashboard -->
+    <div id="adminModal" class="fixed inset-0 bg-black/80 backdrop-blur-sm hidden z-50 flex items-center justify-center p-4 overflow-y-auto">
+        <div class="bg-rrCard border border-rrBorder rounded-lg max-w-lg w-full p-6 space-y-6 max-h-[90vh] overflow-y-auto">
+            <div class="flex justify-between items-center border-b border-rrBorder pb-4">
+                <h3 class="font-bold text-lg text-rrRed uppercase">Owner Edit Dashboard</h3>
+                <button onclick="toggleAdminModal()" class="text-gray-400 hover:text-white"><i class="fas fa-times text-lg"></i></button>
+            </div>
+
+            <!-- Login View -->
+            <div id="loginView" class="space-y-4">
+                <p class="text-sm text-gray-400">Enter owner PIN to manage players and creators.</p>
+                <input type="password" id="adminPin" placeholder="Enter Admin PIN" class="w-full bg-black border border-rrBorder rounded px-3 py-2 text-sm text-white focus:outline-none focus:border-rrRed">
+                <button onclick="verifyAdmin()" class="w-full bg-rrRed text-white font-bold py-2 rounded text-sm hover:bg-red-700 transition">Unlock Panel</button>
+            </div>
+
+            <!-- Dashboard View -->
+            <div id="dashboardView" class="space-y-6 hidden">
+                <div class="flex justify-between items-center bg-black/40 p-3 rounded border border-rrBorder">
+                    <span class="text-xs text-green-400 font-medium"><i class="fas fa-check-circle mr-1"></i> Owner Mode Active</span>
+                    <button onclick="logoutAdmin()" class="text-xs text-red-400 hover:underline">Lock Out</button>
+                </div>
+
+                <!-- Add Player Form -->
+                <div class="space-y-3 border-t border-rrBorder pt-4">
+                    <h4 class="font-bold text-sm uppercase text-rrRed">Add Competitive Player</h4>
+                    <input type="text" id="pName" placeholder="Player IGN (e.g., Takeku)" class="w-full bg-black border border-rrBorder rounded px-3 py-2 text-xs text-white">
+                    <input type="text" id="pTeam" placeholder="Team Name / Division (e.g., Main Roster, Team Alpha)" class="w-full bg-black border border-rrBorder rounded px-3 py-2 text-xs text-white">
+                    <input type="text" id="pRole" placeholder="Role / Position (e.g., Mid Laner, Jungler)" class="w-full bg-black border border-rrBorder rounded px-3 py-2 text-xs text-white">
+                    
+                    <select id="pGame" class="w-full bg-black border border-rrBorder rounded px-3 py-2 text-xs text-white">
+                        <option value="Wild Rift">Wild Rift</option>
+                        <option value="League of Legends">League of Legends</option>
+                        <option value="Valorant">Valorant</option>
+                    </select>
+
+                    <input type="text" id="pSocials" placeholder="Social Link / Profile (Optional)" class="w-full bg-black border border-rrBorder rounded px-3 py-2 text-xs text-white">
+                    
+                    <div class="space-y-1">
+                        <label class="text-[10px] text-gray-400 uppercase font-semibold">Select Player Photo (Auto Cropped):</label>
+                        <input type="file" id="pImgFile" accept="image/*" class="w-full text-xs text-gray-400 file:mr-4 file:py-1 file:px-3 file:rounded file:border-0 file:text-xs file:font-semibold file:bg-rrRed file:text-white hover:file:bg-red-700">
+                    </div>
+
+                    <button onclick="addPlayer()" class="w-full bg-rrRed text-white text-xs font-bold py-2 rounded hover:bg-red-700 transition">Add Player to Roster</button>
+                </div>
+
+                <!-- Add Creator Form -->
+                <div class="space-y-3 border-t border-rrBorder pt-4">
+                    <h4 class="font-bold text-sm uppercase text-rrRed">Add Content Creator</h4>
+                    <input type="text" id="cName" placeholder="Creator Name" class="w-full bg-black border border-rrBorder rounded px-3 py-2 text-xs text-white">
+                    
+                    <select id="cGame" class="w-full bg-black border border-rrBorder rounded px-3 py-2 text-xs text-white">
+                        <option value="Wild Rift">Wild Rift</option>
+                        <option value="League of Legends">League of Legends</option>
+                        <option value="Valorant">Valorant</option>
+                        <option value="TFT">TFT (Teamfight Tactics)</option>
+                    </select>
+
+                    <textarea id="cBio" placeholder="Creator description / bio..." class="w-full bg-black border border-rrBorder rounded px-3 py-2 text-xs text-white h-16"></textarea>
+
+                    <div class="space-y-2 bg-black/40 p-3 rounded border border-rrBorder">
+                        <span class="text-[10px] text-gray-300 font-bold uppercase">Social Links (TikTok, YouTube, Twitch)</span>
+                        <input type="text" id="cTiktok" placeholder="TikTok Link" class="w-full bg-black border border-rrBorder rounded px-2 py-1 text-xs text-white mb-1">
+                        <input type="text" id="cYoutube" placeholder="YouTube Link" class="w-full bg-black border border-rrBorder rounded px-2 py-1 text-xs text-white mb-1">
+                        <input type="text" id="cTwitch" placeholder="Twitch Link" class="w-full bg-black border border-rrBorder rounded px-2 py-1 text-xs text-white">
+                    </div>
+
+                    <div class="space-y-1">
+                        <label class="text-[10px] text-gray-400 uppercase font-semibold">Select Creator Photo (Auto Cropped):</label>
+                        <input type="file" id="cImgFile" accept="image/*" class="w-full text-xs text-gray-400 file:mr-4 file:py-1 file:px-3 file:rounded file:border-0 file:text-xs file:font-semibold file:bg-rrRed file:text-white hover:file:bg-red-700">
+                    </div>
+
+                    <button onclick="addCreator()" class="w-full bg-rrRed text-white text-xs font-bold py-2 rounded hover:bg-red-700 transition">Add Content Creator</button>
+                </div>
+
+                <!-- Delete Manager -->
+                <div class="space-y-3 border-t border-rrBorder pt-4">
+                    <h4 class="font-bold text-sm uppercase text-gray-300">Manage / Remove Entries</h4>
+                    <div id="manageList" class="space-y-2 max-h-40 overflow-y-auto text-xs">
+                        <!-- Populated dynamically -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Script Engine -->
+    <script>
+        const defaultPlayers = [
+            { id: 1, name: "Takeku", team: "Main Roster", role: "Mid Laner", game: "Wild Rift", socials: "#", img: "https://images.unsplash.com/photo-1566492031773-4f4e44671857?auto=format&fit=crop&w=600&q=80" }
+        ];
+
+        const defaultCreators = [
+            { id: 1, name: "Takeku", game: "Wild Rift", bio: "Content creator and streamer covering Wild Rift, League of Legends, and community events.", tiktok: "#", youtube: "#", twitch: "#", img: "https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&fit=crop&w=800&q=80" }
+        ];
+
+        let players = JSON.parse(localStorage.getItem('rr_players')) || defaultPlayers;
+        let creators = JSON.parse(localStorage.getItem('rr_creators')) || defaultCreators;
+
+        function saveData() {
+            localStorage.setItem('rr_players', JSON.stringify(players));
+            localStorage.setItem('rr_creators', JSON.stringify(creators));
+            renderSite();
+        }
+
+        function renderSite() {
+            const pGrid = document.getElementById('playersGrid');
+            pGrid.innerHTML = players.map(p => `
+                <div class="bg-rrCard border border-rrBorder rounded-xl overflow-hidden flex flex-row shadow-xl hover:border-rrRed/50 transition">
+                    <!-- Left Photo (Auto-Cropped Side Profile) -->
+                    <div class="w-32 sm:w-36 bg-black relative flex-shrink-0 overflow-hidden">
+                        <img src="${p.img}" alt="${p.name}" class="w-full h-full object-cover object-center">
+                        <span class="absolute top-2 left-2 bg-rrRed text-white text-[9px] font-black px-1.5 py-0.5 rounded uppercase tracking-wider">${p.game}</span>
+                    </div>
+                    <!-- Right Content Details -->
+                    <div class="p-4 flex flex-col justify-between flex-grow space-y-1">
+                        <div>
+                            <div class="flex items-center space-x-2">
+                                <span class="bg-rrBorder text-gray-300 text-[10px] font-bold px-2 py-0.5 rounded uppercase border border-rrRed/30">${p.team || 'Rift Raiders'}</span>
+                            </div>
+                            <h3 class="text-lg font-black text-white mt-1 leading-tight">${p.name}</h3>
+                            <p class="text-rrRed text-xs font-bold uppercase tracking-wide mt-0.5">${p.role}</p>
+                        </div>
+                        ${p.socials ? `<a href="${p.socials}" target="_blank" class="text-xs text-gray-400 hover:text-rrRed font-semibold transition inline-flex items-center pt-2">Profile / Socials <i class="fas fa-external-link-alt ml-1 text-[10px]"></i></a>` : ''}
+                    </div>
+                </div>
+            `).join('');
+
+            const cGrid = document.getElementById('creatorsGrid');
+            cGrid.innerHTML = creators.map(c => `
+                <div class="bg-rrCard border border-rrBorder rounded-xl overflow-hidden flex flex-row shadow-xl hover:border-rrRed/50 transition">
+                    <!-- Left Photo (Auto-Cropped) -->
+                    <div class="w-32 sm:w-36 bg-black relative flex-shrink-0 overflow-hidden">
+                        <img src="${c.img}" alt="${c.name}" class="w-full h-full object-cover object-center">
+                        <span class="absolute top-2 left-2 bg-rrRed text-white text-[9px] font-black px-1.5 py-0.5 rounded uppercase tracking-wider">${c.game}</span>
+                    </div>
+                    <!-- Right Content Details -->
+                    <div class="p-4 flex flex-col justify-between flex-grow space-y-2">
+                        <div>
+                            <h3 class="text-lg font-black text-white leading-tight">${c.name}</h3>
+                            <p class="text-gray-300 text-xs leading-snug line-clamp-3 mt-1">${c.bio || 'Official Content Creator for Rift Raiders.'}</p>
+                        </div>
+                        <div class="flex space-x-3 text-xs font-bold text-rrRed pt-1">
+                            ${c.tiktok ? `<a href="${c.tiktok}" target="_blank" class="hover:underline flex items-center"><i class="fab fa-tiktok mr-1"></i> TikTok</a>` : ''}
+                            ${c.youtube ? `<a href="${c.youtube}" target="_blank" class="hover:underline flex items-center"><i class="fab fa-youtube mr-1"></i> YT</a>` : ''}
+                            ${c.twitch ? `<a href="${c.twitch}" target="_blank" class="hover:underline flex items-center"><i class="fab fa-twitch mr-1"></i> Twitch</a>` : ''}
+                        </div>
+                    </div>
+                </div>
+            `).join('');
+
+            const mList = document.getElementById('manageList');
+            let html = '<p class="text-gray-400 font-bold">Players:</p>';
+            players.forEach((p, idx) => {
+                html += `<div class="flex justify-between items-center bg-black p-2 rounded mb-1"><span>${p.name} [${p.team || 'Rift Raiders'}]</span> <button onclick="deletePlayer(${idx})" class="text-red-400 hover:text-red-600 font-bold">Remove</button></div>`;
+            });
+            html += '<p class="text-gray-400 font-bold mt-3">Creators:</p>';
+            creators.forEach((c, idx) => {
+                html += `<div class="flex justify-between items-center bg-black p-2 rounded mb-1"><span>${c.name}</span> <button onclick="deleteCreator(${idx})" class="text-red-400 hover:text-red-600 font-bold">Remove</button></div>`;
+            });
+            mList.innerHTML = html;
+        }
+
+        function toggleAdminModal() {
+            document.getElementById('adminModal').classList.toggle('hidden');
+        }
+
+        function verifyAdmin() {
+            if(document.getElementById('adminPin').value === '1234') {
+                document.getElementById('loginView').classList.add('hidden');
+                document.getElementById('dashboardView').classList.remove('hidden');
+            } else {
+                alert('Wrong PIN!');
+            }
+        }
+
+        function logoutAdmin() {
+            document.getElementById('loginView').classList.remove('hidden');
+            document.getElementById('dashboardView').classList.add('hidden');
+            document.getElementById('adminPin').value = '';
+        }
+
+        function processImageFile(fileInputId, callback) {
+            const fileInput = document.getElementById(fileInputId);
+            if (fileInput.files && fileInput.files[0]) {
+                const reader = new FileReader();
+                reader.onload = function(e) {
+                    callback(e.target.result);
+                };
+                reader.readAsDataURL(fileInput.files[0]);
+            } else {
+                callback("https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&w=600&q=80");
+            }
+        }
+
+        function addPlayer() {
+            const name = document.getElementById('pName').value;
+            const team = document.getElementById('pTeam').value;
+            const role = document.getElementById('pRole').value;
+            const game = document.getElementById('pGame').value;
+            const socials = document.getElementById('pSocials').value;
+
+            if(!name) return alert('Please enter player IGN.');
+
+            processImageFile('pImgFile', function(imgUrl) {
+                players.push({ id: Date.now(), name, team, role, game, socials, img: imgUrl });
+                saveData();
+                alert('Player added successfully!');
+                document.getElementById('pName').value = '';
+                document.getElementById('pTeam').value = '';
+                document.getElementById('pRole').value = '';
+                document.getElementById('pSocials').value = '';
+                document.getElementById('pImgFile').value = '';
+            });
+        }
+
+        function addCreator() {
+            const name = document.getElementById('cName').value;
+            const game = document.getElementById('cGame').value;
+            const bio = document.getElementById('cBio').value;
+            const tiktok = document.getElementById('cTiktok').value;
+            const youtube = document.getElementById('cYoutube').value;
+            const twitch = document.getElementById('cTwitch').value;
+
+            if(!name) return alert('Please enter creator name.');
+
+            processImageFile('cImgFile', function(imgUrl) {
+                creators.push({ id: Date.now(), name, game, bio, tiktok, youtube, twitch, img: imgUrl });
+                saveData();
+                alert('Creator added successfully!');
+                document.getElementById('cName').value = '';
+                document.getElementById('cBio').value = '';
+                document.getElementById('cTiktok').value = '';
+                document.getElementById('cYoutube').value = '';
+                document.getElementById('cTwitch').value = '';
+                document.getElementById('cImgFile').value = '';
+            });
+        }
+
+        function deletePlayer(idx) {
+            if(confirm('Delete player?')) { players.splice(idx, 1); saveData(); }
+        }
+
+        function deleteCreator(idx) {
+            if(confirm('Delete creator?')) { creators.splice(idx, 1); saveData(); }
+        }
+
+        renderSite();
+    </script>
+</body>
+</html>
     <!-- Secure Admin Modal Dashboard -->
     <div id="adminModal" class="fixed inset-0 bg-black/80 backdrop-blur-sm hidden z-50 flex items-center justify-center p-4 overflow-y-auto">
         <div class="bg-rrCard border border-rrBorder rounded-lg max-w-lg w-full p-6 space-y-6 max-h-[90vh] overflow-y-auto">
